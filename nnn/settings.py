@@ -45,6 +45,8 @@ INSTALLED_APPS = [
     'blog',
     'menu',
     'pages',
+    'allauth',
+    'allauth.account',
 ]
 
 MIDDLEWARE = [
@@ -137,3 +139,11 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 
 CKEDITOR_UPLOAD_PATH = "uploads/"
+
+AUTHENTICATION_BACKENDS = [
+
+    'django.contrib.auth.backends.ModelBackend',
+
+    'allauth.account.auth_backends.AuthenticationBackend',
+
+]

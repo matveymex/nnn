@@ -24,5 +24,5 @@ class MenuItemAdmin(MPTTModelAdmin):
     save_as = True
     list_editable = ("sort", "published")
     mptt_level_indent = 20
-    #actions = ['unpublish', 'publish']
+    #actions = ['unpublish', 'publish']ё
 
